@@ -1,8 +1,8 @@
 ﻿<!DOCTYPE html>
 <html>
 	<script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
-	<!-- we import arjs version without NFT but with marker + location based support -->
 	<script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+
 	<body style="margin : 0px; overflow: hidden;">
 		<a-scene embedded arjs>
 			<a-marker type="pattern" preset="custom" url="https://ssmmuseum.github.io/augmentedreality/img/marker/pattern-qrcode.patt">
@@ -23,18 +23,21 @@
 		</a-scene>
 
 		<img id="myImage" src="smiley.gif">
+
 		<div id="testCanvas" scale="LLLLL"></div>
-	<!--<script>
+
+	<script>
 	document.getElementById("mainCanvas").scale = "0.0 0.0 0.0";
 	document.getElementById("testCanvas").scale = "0.0 0.0 0.0";
 	document.getElementById("myImage").src = "landscape.jpg";
-	</script>-->
+	</script>
 
+	<!-- this test didnt work either
 	<script type="text/javascript">
         window.onload = function(){
 			document.getElementById("testCanvas").scale = "0.0 0.0 0.0";
         };
     </script>
-
+	-->
   </body>
 </html>
