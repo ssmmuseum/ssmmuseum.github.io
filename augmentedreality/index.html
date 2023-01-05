@@ -7,6 +7,7 @@
     <a-scene embedded arjs>
       <a-marker type="pattern" preset="custom" url="https://ssmmuseum.github.io/augmentedreality/img/marker/pattern-qrcode.patt">
         <a-entity
+		  id="main"
           position="0 0 0"
           scale="0.1666 0.1666 0.1666"
           gltf-model="https://ssmmuseum.github.io/augmentedreality/img/monalisa.gltf"
@@ -14,5 +15,10 @@
       </a-marker>
       <a-entity camera></a-entity>
     </a-scene>
+
+	<script>
+	document.getElementById("main").gltf-model = "https://ssmmuseum.github.io/augmentedreality/img/cardback.gltf";
+	</script>
+
   </body>
 </html>
