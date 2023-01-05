@@ -6,11 +6,13 @@
 	<body style="margin : 0px; overflow: hidden;">
 
 		<a-scene embedded arjs>
+
+			<a-marker type="pattern" preset="custom" url="https://ssmmuseum.github.io/augmentedreality/img/marker/pattern-qrcode.patt">
+
 			<a-assets>
 				<a-asset-item id="cardback" src="https://ssmmuseum.github.io/augmentedreality/img/cardback.gltf"></a-asset-item>
 			</a-assets>
 
-			<a-marker type="pattern" preset="custom" url="https://ssmmuseum.github.io/augmentedreality/img/marker/pattern-qrcode.patt">
 			<a-entity
 				id="mainCanvas"
 				position="0 0 0"
