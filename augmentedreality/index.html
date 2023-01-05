@@ -6,11 +6,16 @@
 	<body style="margin : 0px; overflow: hidden;">
 		<a-scene embedded arjs>
 			<a-marker type="pattern" preset="custom" url="https://ssmmuseum.github.io/augmentedreality/img/marker/pattern-qrcode.patt">
+
+				<a-assets>
+					<a-asset-item id="monalisa" src="https://ssmmuseum.github.io/augmentedreality/img/monalisa.gltf"></a-asset-item>
+				</a-assets>
+
 			<a-entity
 				id="mainCanvas"
 				position="0 0 0"
 				scale="0.1666 0.1666 0.1666"
-				gltf-model="https://ssmmuseum.github.io/augmentedreality/img/monalisa.gltf"
+				gltf-model="#monalisa"
 			></a-entity>
 			</a-marker>
 			<a-entity camera></a-entity>
