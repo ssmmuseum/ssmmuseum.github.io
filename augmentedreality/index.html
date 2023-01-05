@@ -27,9 +27,10 @@
 
 		<div id="testCanvas" scale="LLLLL"></div>
 
-
+	<!-- testcanvas.setattribute and myimage.src are the only two that work -->
+	<!-- ideally i could change gltf-model in mainCanvas -->
 	<script>
-	document.getElementById("mainCanvas").scale = "0.0 0.0 0.0";
+	document.getElementById("mainCanvas").scale = "0.0 0.0 0.0"; 
 	document.getElementById("mainCanvas").setAttribute("scale", "0.0 0.0 0.0");
 	document.getElementById("testCanvas").scale = "0.0 0.0 0.0";
 	document.getElementById("testCanvas").setAttribute("scale", "0.0 0.0 0.0");
