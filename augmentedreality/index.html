@@ -16,7 +16,7 @@
 
 			<a-entity
 				position="0 0 0"
-				scale="0.2 0.2 0.2"
+				scale="0.0 0.0 0.0"
 				gltf-model="https://ssmmuseum.github.io/augmentedreality/img/cardback.gltf"
 			></a-entity>
 			</a-marker>
@@ -29,6 +29,7 @@
 
 	<script>
 	document.getElementById("mainCanvas").scale = "0.0 0.0 0.0";
+	document.getElementById("mainCanvas").setAttribute("scale", "0.0 0.0 0.0");
 	document.getElementById("testCanvas").scale = "0.0 0.0 0.0";
 	document.getElementById("myImage").src = "landscape.jpg";
 	</script>
