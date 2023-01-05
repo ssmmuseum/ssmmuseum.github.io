@@ -8,7 +8,6 @@
 			<a-marker type="pattern" preset="custom" url="https://ssmmuseum.github.io/augmentedreality/img/marker/pattern-qrcode.patt">
 			<a-entity
 				id="mainCanvas"
-				style="display:none;"
 				position="0 0 0"
 				scale="0.1666 0.1666 0.1666"
 				gltf-model="https://ssmmuseum.github.io/augmentedreality/img/monalisa.gltf"
@@ -23,18 +22,15 @@
 			<a-entity camera></a-entity>
 		</a-scene>
 
-		<img id="myImage" src="smiley.gif">
-
 		<div id="testCanvas" scale="LLLLL"></div>
 
-	<!-- testcanvas.setattribute and myimage.src are the only two that work -->
+	<!-- testcanvas.setattribute is the only one that works -->
 	<!-- ideally i could change gltf-model in mainCanvas -->
 	<script>
 	document.getElementById("mainCanvas").scale = "0.0 0.0 0.0"; 
 	document.getElementById("mainCanvas").setAttribute("scale", "0.0 0.0 0.0");
 	document.getElementById("testCanvas").scale = "0.0 0.0 0.0";
 	document.getElementById("testCanvas").setAttribute("scale", "0.0 0.0 0.0");
-	document.getElementById("myImage").src = "landscape.jpg";
 	</script>
 
 	<!--this test didnt work either 
