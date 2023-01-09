@@ -15,19 +15,11 @@
 			<a-marker type="pattern" preset="custom" url="https://ssmmuseum.github.io/augmentedreality/img/marker/pattern-qrcode.patt">
 			
 			<a-entity
-				id="mona"
+				id="mainCanvas"
 				position="0 0 0"
 				scale="0.1 0.1 0.1"
 				gltf-model="#monalisa"
 				visible="true"
-			></a-entity>
-
-			<a-entity
-				id="card"
-				position="0 0 0"
-				scale="0.1 0.1 0.1"
-				gltf-model="#cardback"
-				visible="false"
 			></a-entity>
 
 			</a-marker>
@@ -45,9 +37,7 @@
 	-->
 
 	<script>
-	document.getElementById('mona').setAttribute('gltf-model', '#cardback');
-	document.getElementById('mona').setAttribute('visible', true);
-	document.getElementById('card').setAttribute('visible', false);
+	document.getElementById('mainCanvas').setAttribute('gltf-model', '#cardback');
 	</script>
 
 	<!--this test didnt work either 
