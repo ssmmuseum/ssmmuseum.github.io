@@ -9,15 +9,24 @@
 
 			<a-assets>
 				<a-asset-item id="monalisa" src="https://ssmmuseum.github.io/augmentedreality/img/monalisa.gltf"></a-asset-item>
+				<a-asset-item id="cardback" src="https://ssmmuseum.github.io/augmentedreality/img/cardback.gltf"></a-asset-item>
 			</a-assets>
 
 			<a-marker type="pattern" preset="custom" url="https://ssmmuseum.github.io/augmentedreality/img/marker/pattern-qrcode.patt">
 			
 			<a-entity
-				id="mainCanvas"
+				id="1"
 				position="0 0 0"
 				scale="0.1 0.1 0.1"
 				gltf-model="#monalisa"
+				visible="true"
+			></a-entity>
+
+			<a-entity
+				id="2"
+				position="0 0 0"
+				scale="0.1 0.1 0.1"
+				gltf-model="#cardback"
 				visible="false"
 			></a-entity>
 
@@ -38,7 +47,8 @@
 	-->
 
 	<script>
-	document.getElementById("monalisa").src = "https://ssmmuseum.github.io/augmentedreality/img/cardback.gltf"; 
+	document.getElementById("1").visible = "false"; 
+	document.getElementById("2").visible = "true"; 
 	</script>
 
 	<!--this test didnt work either 
