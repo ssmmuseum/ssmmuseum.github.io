@@ -1,7 +1,7 @@
 ﻿<!DOCTYPE html>
 <html>
-	<script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
-	<!--<script src="https://aframe.io/releases/1.4.0/aframe.min.js"></script>-->
+	<!--<script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>-->
+	<script src="https://aframe.io/releases/1.4.0/aframe.min.js"></script>
 	<script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
 
 	<head>
@@ -9,6 +9,21 @@
 		.a-enter-vr-button {
 			display: none;
 		}
+
+		#footer {
+			margin-bottom: 0px;
+			height: 64px;
+			background-color: #ffffff;
+		}
+
+		#previous {
+			float: left;
+		}
+
+		#next {
+			float: right;
+		}
+
 		</style>
 	</head>
 	<body style="margin : 0px; overflow: hidden;">
@@ -46,6 +61,14 @@
 	<script>
 	document.getElementById('mainCanvas').setAttribute('gltf-model', '#monalisa');
 	</script>
+
+	<div id="footer">
+
+	<button id="previous" class="button"> PREV </button>
+	<button id="next" class="button"> NEXT </button>
+
+	</div>
+
 
 	<!--this test didnt work either 
 	<script type="text/javascript">
