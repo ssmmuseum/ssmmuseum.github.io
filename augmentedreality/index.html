@@ -79,26 +79,36 @@
 	</div>
 
 	<script>
-		// Get the span element
-		const mySpan = document.getElementById("assets");
 
-		// Get all the elements within the span element
-		const elementsWithinAssets = mySpan.getElementsByTagName("*");
+		function GetAssets() {
+			// Get the span element
+			const mySpan = document.getElementById("assets");
 
-		// Create an array to hold the IDs of each element
-		const idList = [];
+			// Get all the elements within the span element
+			const elementsWithinAssets = mySpan.getElementsByTagName("*");
 
-		// Loop through each element and add its ID to the array
-		for (let i = 0; i < elementsWithinAssets.length; i++) {
-			const element = elementsWithinAssets[i];
-			const id = '#' + element.id;
-			if (id) {
-				idList.push(id);
+			// Create an array to hold the IDs of each element
+			const idList = [];
+
+			// Loop through each element and add its ID to the array
+			for (let i = 0; i < elementsWithinAssets.length; i++) {
+				const element = elementsWithinAssets[i];
+				const id = '#' + element.id;
+				if (id) {
+					idList.push(id);
+				}
 			}
+
+			// Log the list of IDs to the console
+			console.log(idList);	
 		}
 
-		// Log the list of IDs to the console
-		console.log(idList);
+		GetAssets();
+
+		const currentIndex = 0 % idList.length;
+
+		console.log("The length is " + idList.length);
+		console.log("The current index is " currentIndex);
 
 		// Go to default model
 		document.getElementById('mainCanvas').setAttribute('gltf-model', idList[0]);
