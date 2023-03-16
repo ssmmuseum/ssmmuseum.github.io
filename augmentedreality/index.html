@@ -80,15 +80,15 @@
 
 	<script>
 
+		// Create an array to hold the IDs of each element
+		const idList = [];
+		
 		function GetAssets() {
 			// Get the span element
 			const mySpan = document.getElementById("assets");
 
 			// Get all the elements within the span element
 			const elementsWithinAssets = mySpan.getElementsByTagName("*");
-
-			// Create an array to hold the IDs of each element
-			const idList = [];
 
 			// Loop through each element and add its ID to the array
 			for (let i = 0; i < elementsWithinAssets.length; i++) {
