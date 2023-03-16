@@ -110,6 +110,7 @@
 		}
 
 		function SetCanvas() {
+			document.getElementById('mainCanvas').removeAttribute('gltf-model')
 			document.getElementById('mainCanvas').setAttribute('gltf-model', idList[currentIndex]);
 		}
 
