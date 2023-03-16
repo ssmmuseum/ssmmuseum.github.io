@@ -71,34 +71,12 @@
 			<a-entity camera></a-entity>
 		</a-scene>
 
-	<!-- testcanvas.setattribute is the only one that works -->
-	<!-- ideally i could change gltf-model in mainCanvas -->
-	<!--
-	<script>
-	document.getElementById("mainCanvas").scale = "0.0 0.0 0.0"; 
-	document.getElementById("mainCanvas").setAttribute("scale", "0.0 0.0 0.0");
-	document.getElementById("monalisa").src = "https://ssmmuseum.github.io/augmentedreality/img/cardback.gltf"; 
-	</script>
-	-->
-
 	<div id="footer">
 
-	<button id="previous" class="button"> PREV </button>
-	<button id="next" class="button"> NEXT </button>
+		<button id="previous" class="button"> PREV </button>
+		<button id="next" class="button"> NEXT </button>
 
 	</div>
-
-
-	<!--this test didnt work either 
-	<script type="text/javascript">
-        window.onload = function(){
-			document.getElementById("mainCanvas").setAttribute("scale", "0.0 0.0 0.0");
-        };
-    </script> -->
-	
-	<script>
-			//document.getElementById('mainCanvas').setAttribute('gltf-model', '#monalisa');
-	</script>
 
 	<script>
 		// Get the span element
@@ -122,7 +100,7 @@
 		// Log the list of IDs to the console
 		console.log(idList);
 
-		//document.getElementById('mainCanvas').setAttribute('gltf-model', '#' + idList[0]);
+		// Go to default model
 		document.getElementById('mainCanvas').setAttribute('gltf-model', idList[0]);
 	</script>
 
