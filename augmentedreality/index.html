@@ -116,12 +116,14 @@
 		function Next() {
 			baseIndex += 1;
 			currentIndex = baseIndex % idList.length;
+			console.log("The base index is " + baseIndex);	
 			SetCanvas();
 		}
 
 		function Prev() {
 			baseIndex -= 1;
 			currentIndex = baseIndex % idList.length;
+			console.log("The base index is " + baseIndex);	
 			SetCanvas();
 		}
 
