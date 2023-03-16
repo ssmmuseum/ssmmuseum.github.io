@@ -83,6 +83,9 @@
 		// Create an array to hold the IDs of each element
 		const idList = [];
 		
+		// Declare index for later use
+		var currentIndex = 0;
+
 		function GetAssets() {
 			// Get the span element
 			const mySpan = document.getElementById("assets");
@@ -110,12 +113,13 @@
 
 		GetAssets();
 
-		const currentIndex = 0 % idList.length;
+		currentIndex = 0 % idList.length;
 
 		SetCanvas();
 
 		console.log("The length is " + idList.length);
 		console.log("The current index is " + currentIndex);
+		console.log("The asset at current index is " + idList[currentIndex]);
 
 	</script>
 
