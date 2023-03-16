@@ -73,8 +73,8 @@
 
 	<div id="footer">
 
-		<button id="previous" class="button"> PREV </button>
-		<button id="next" class="button"> NEXT </button>
+		<button id="previous" class="button" onclick="Prev()"> PREV </button>
+		<button id="next" class="button" onclick="Next()"> NEXT </button>
 
 	</div>
 
@@ -102,6 +102,8 @@
 				}
 			}
 
+			currentIndex = 0 % idList.length;
+
 			// Log the list of IDs to the console
 			console.log(idList);	
 		}
@@ -110,12 +112,21 @@
 			document.getElementById('mainCanvas').setAttribute('gltf-model', idList[currentIndex]);
 		}
 
+		function Next() {
+			currentIndex += 1;
+			SetCanvas();
+		}
+
+		function Prev() {
+			currentIndex -= 1;
+			SetCanvas();
+		}
 
 		GetAssets();
 
-		currentIndex = 0 % idList.length;
-
 		SetCanvas();
+
+
 
 		console.log("The length is " + idList.length);
 		console.log("The current index is " + currentIndex);
