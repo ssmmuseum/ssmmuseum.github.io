@@ -84,6 +84,7 @@
 		const idList = [];
 		
 		// Declare index for later use
+		var baseIndex = 0;
 		var currentIndex = 0;
 
 		function GetAssets() {
@@ -102,7 +103,7 @@
 				}
 			}
 
-			currentIndex = 0 % idList.length;
+			currentIndex = baseIndex % idList.length;
 
 			// Log the list of IDs to the console
 			console.log(idList);	
@@ -113,12 +114,14 @@
 		}
 
 		function Next() {
-			currentIndex += 1;
+			baseIndex += 1;
+			currentIndex = baseIndex % idList.length;
 			SetCanvas();
 		}
 
 		function Prev() {
-			currentIndex -= 1;
+			baseIndex -= 1;
+			currentIndex = baseIndex % idList.length;
 			SetCanvas();
 		}
 
