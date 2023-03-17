@@ -127,28 +127,18 @@
 		function Next() {
 			baseIndex += 1;
 			currentIndex = baseIndex % idList.length;
-			console.log("The base index is " + baseIndex);
-			console.log("The current index is " + currentIndex);	
 			SetCanvas();
 		}
 
 		function Prev() {
 			baseIndex -= 1;
 			currentIndex = baseIndex % idList.length;
-			console.log("The base index is " + baseIndex);
-			console.log("The current index is " + currentIndex);	
 			SetCanvas();
 		}
 
 		GetAssets();
 
 		SetCanvas();
-
-
-
-		console.log("The length is " + idList.length);
-		console.log("The current index is " + currentIndex);
-		console.log("The asset at current index is " + idList[currentIndex]);
 
 	</script>
 
