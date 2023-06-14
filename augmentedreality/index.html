@@ -129,7 +129,7 @@
 		}
 
 		function SetScale() {
-			var newScale = 1.0 / trackerScale;
+			var newScale = 1.0 * trackerScale;
 			document.getElementById('mainCanvas').removeAttribute('scale')
 			document.getElementById('mainCanvas').setAttribute('scale', newScale + ', ' + newScale + ', ' + newScale);
 		}
