@@ -97,6 +97,9 @@
 		var baseIndex = 0;
 		var currentIndex = 0;
 
+		// Declare tracker scale in inches
+		var trackerScale = 6.0;
+
 		function GetAssets() {
 			// Get the span element
 			const mySpan = document.getElementById("assets");
@@ -124,6 +127,11 @@
 			document.getElementById('mainCanvas').setAttribute('gltf-model', idList[currentIndex]);
 		}
 
+		function SetScale() {
+			var newScale = 1.0/trackerScale;
+			document.getElementById('mainCanvas').setAttribute('scale', 'newScale, newScale, newScale');
+		}
+
 		function Next() {
 			baseIndex += 1;
 			currentIndex = baseIndex % idList.length;
@@ -139,6 +147,8 @@
 		GetAssets();
 
 		SetCanvas();
+
+		SetScale();
 
 	</script>
 
