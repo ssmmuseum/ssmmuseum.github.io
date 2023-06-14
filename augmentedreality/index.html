@@ -129,8 +129,9 @@
 		}
 
 		function SetScale() {
+			var realScale = 39.3701 / trackerScale;
 			document.getElementById('mainCanvas').removeAttribute('scale')
-			document.getElementById('mainCanvas').setAttribute('scale', trackerScale + ', ' + trackerScale + ', ' + trackerScale);
+			document.getElementById('mainCanvas').setAttribute('scale', realScale + ', ' + realScale + ', ' + realScale);
 		}
 
 		function Next() {
