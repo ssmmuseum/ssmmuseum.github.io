@@ -61,7 +61,7 @@
 			
 			<a-entity
 				id="loading"
-				position="0 -0.01 0.0"
+				position="0.0 0.0 0.0"
 				scale="0.0 0.0 0.0"
 				gltf-model="https://ssmmuseum.github.io/augmentedreality/img/cardback.gltf"
 				visible="true"
@@ -129,7 +129,7 @@
 		function SetScale() {
 			var realScale = 39.3701 / trackerScale;
 			document.getElementById('mainCanvas').removeAttribute('scale')
-			document.getElementById('mainCanvas').setAttribute('scale', realScale + ', ' + realScale + ', ' + realScale);
+			document.getElementById('mainCanvas').setAttribute('scale', realScale + realScale + realScale);
 		}
 
 		function Next() {
